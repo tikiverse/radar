@@ -21,13 +21,6 @@ Published at [radar.tiki.pub](https://radar.tiki.pub).
 | **Assess** | Worth spending time to research |
 | **Hold off** | No further incentive to take action here |
 
-## Rules
-
-1. Nothing goes on the radar that I haven't personally touched.
-2. Every entry is dated. Entries move between rings; the dates stay.
-3. Assess is cheap on purpose — it's where a shiny new idea goes instead of becoming a weekend project.
-4. v0 is a markdown table. It stays a markdown table until the table is genuinely the bottleneck.
-
 ## Radar
 
 | Item | Ring | Since | Notes |
