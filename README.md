@@ -1,12 +1,12 @@
 # radar
 
-My personal tech radar. Inspired by the [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar) - if you haven't checked that out, please do.
+My personal tech radar. Inspired by the [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar) - if you haven't checked that out, I recommend it.
 
 It's never been easier for a single person to run their own software factory, thanks to agentic AI. With this newfound leverage and scale, it's wise for individual software engineers to inherit the behaviors of larger software factories (and treat the software factory itself [like a product](https://x.com/rauchg/status/2081123293340520642)).
 
 Thoughtworks has been one of the best at this game and I've been following them for more than 10 years. I love what they do with their Technology Radar, and felt the need to recreate this format for myself to share with others.
 
-I highly encourage you to consider it too.
+I encourage you to consider it too.
 
 ---
 
@@ -32,7 +32,7 @@ Published at [radar.tiki.pub](https://radar.tiki.pub).
 
 | Item | Ring | Since | Notes |
 |---|---|---|---|
-| Claude Code | Adopt | 2026-04 | Primary interface for coding and for the agentOS vault. |
+| Claude Code w/ Remote Control | Adopt | 2026-04 | Work on projects, across multiple hosts, on the go. |
 | Obsidian | Adopt | — | Second brain. Daily notes, weekly/monthly/quarterly reviews. As of Jul '26, I pay for Obsidian Sync as well after dealing with iCloud sync data corruption. |
 | Cloudflare Workers | Trial | — | Using for a few hobby projects. |
 | restic + Backblaze | Assess | — | Remote backup snapshots. |
