@@ -2,7 +2,7 @@
 
 A personal tech radar. Inspired heavily by the [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar) - if you haven't checked that out, please do.
 
-It's never been easier for a single person to run their own software factory, thanks to agentic AI. With this newfound leverage and scale, it's important for individual software engineers to inherit the behaviors of larger software factories (and treat the software factory itself [like a product](https://x.com/rauchg/status/2081123293340520642)).
+It's never been easier for a single person to run their own software factory, thanks to agentic AI. With this newfound leverage and scale, it's wise for individual software engineers to inherit the behaviors of larger software factories (and treat the software factory itself [like a product](https://x.com/rauchg/status/2081123293340520642)).
 
 Thoughtworks is one of the best at this game and I've been following them for more than 10 years. I love what they do with their Technology Radar, and felt the need to recreate this format for myself to share with others.
 
