@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>radar — tiki</title>
+<meta name="description" content="A personal tech radar. What I'm using, trying, and holding — dated.">
+<style>
+  :root {
+    --bg:      #fdfdfc;
+    --fg:      #17171a;
+    --muted:   #73737a;
+    --faint:   #9a9aa0;
+    --rule:    #e5e5e1;
+    --rule-hi: #d2d2cd;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:      #111112;
+      --fg:      #e9e9e6;
+      --muted:   #8d8d94;
+      --faint:   #6a6a70;
+      --rule:    #262628;
+      --rule-hi: #37373a;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Inter",
+                 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16.5px;
+    line-height: 1.65;
+    letter-spacing: -0.006em;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  main {
+    max-width: 41rem;
+    margin: 0 auto;
+    padding: 7rem 1.75rem 8rem;
+  }
+
+  /* ---------- prose ---------- */
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 2.25rem;
+  }
+
+  p { margin: 0 0 1.25rem; }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--rule-hi);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2.5px;
+    transition: text-decoration-color 120ms ease;
+  }
+  a:hover { text-decoration-color: currentColor; }
+
+  strong { font-weight: 600; }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 3rem 0;
+  }
+
+  .note {
+    color: var(--muted);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+  /* ---------- rules list ---------- */
+
+  h2 {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin: 0 0 1rem;
+  }
+
+  ol {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+  ol li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
+  ol li::marker { color: var(--faint); }
+
+  /* ---------- rings ---------- */
+
+  section { margin-top: 3.25rem; }
+
+  .ring {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 0.625rem;
+    border-bottom: 1px solid var(--rule-hi);
+    margin-bottom: 0.25rem;
+  }
+
+  .ring h2 { margin: 0; }
+
+  .ring .gloss {
+    color: var(--faint);
+    font-size: 0.8125rem;
+    text-align: right;
+    line-height: 1.4;
+  }
+
+  /* ---------- tables ---------- */
+
+  .scroll { overflow-x: auto; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
+
+  td {
+    border-bottom: 1px solid var(--rule);
+    padding: 0.875rem 1rem 0.875rem 0;
+    vertical-align: baseline;
+  }
+  tr:last-child td { border-bottom: 0; }
+
+  .item {
+    font-weight: 500;
+    white-space: nowrap;
+    padding-right: 1.5rem;
+  }
+
+  .since {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.8125rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--faint);
+    white-space: nowrap;
+    padding-right: 1.5rem;
+  }
+
+  .notes {
+    color: var(--muted);
+    line-height: 1.55;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .empty {
+    color: var(--faint);
+    font-size: 0.9375rem;
+    padding: 0.875rem 0;
+  }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    margin-top: 4.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--faint);
+    font-size: 0.8125rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 34rem) {
+    main { padding: 3.5rem 1.25rem 5rem; }
+    body { font-size: 16px; }
+    .ring { display: block; }
+    .ring .gloss { text-align: left; margin-top: 0.25rem; }
+    .item { white-space: normal; padding-right: 1rem; }
+    .since { padding-right: 1rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>radar</h1>
+
+  <p>A personal tech radar. Inspired heavily by the <a href="https://www.thoughtworks.com/radar">Thoughtworks Technology Radar</a> — if you haven't checked that out, please do.</p>
+
+  <p>It's never been easier for a single person to run their own software factory, thanks to agentic AI. With this newfound leverage and scale, it's important for individual software engineers to inherit the behaviors of larger software factories (and treat the software factory itself <a href="https://x.com/rauchg/status/2081123293340520642">like a product</a>). Thoughtworks is one of the best at this game and I've been following them for more than 10 years. I love what they do with their Technology Radar, and now that I'm assessing and trialing many different software solutions across my many projects, I feel the need to recreate this format for myself.</p>
+
+  <p>I highly encourage you consider it too.</p>
+
+  <hr>
+
+  <p class="note">This is a <strong>log, not a recommendation</strong>. It records what I'm actually using, trying, and avoiding, with dates. It is not an argument that any of these choices are correct, and it isn't advice. If an entry is here, it means I touched the thing — nothing more.</p>
+
+  <h2 style="margin-top:2.5rem">Rules</h2>
+  <ol>
+    <li>Nothing goes on the radar that I haven't personally touched.</li>
+    <li>Every entry is dated. Entries move between rings; the dates stay.</li>
+    <li>Assess is cheap on purpose — it's where a shiny new idea goes instead of becoming a weekend project.</li>
+    <li>v0 is a markdown table. It stays a markdown table until the table is genuinely the bottleneck.</li>
+  </ol>
+
+  <section>
+    <div class="ring">
+      <h2>Adopt</h2>
+      <div class="gloss">In real use. I'd reach for this by default.</div>
+    </div>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td class="item">Claude Code</td>
+            <td class="since">2026-04</td>
+            <td class="notes">Primary interface for coding and for the agentOS vault.</td>
+          </tr>
+          <tr>
+            <td class="item">Obsidian</td>
+            <td class="since">—</td>
+            <td class="notes">Daily notes, weekly/monthly/quarterly reviews. Private by design.</td>
+          </tr>
+          <tr>
+            <td class="item">Healthchecks.io</td>
+            <td class="since">2026-06</td>
+            <td class="notes">For cron/job observability — wanting assurance that scheduled intents actually ran.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="ring">
+      <h2>Trial</h2>
+      <div class="gloss">Actively using it on something real, not yet settled.</div>
+    </div>
+    <p class="empty">Nothing here yet.</p>
+  </section>
+
+  <section>
+    <div class="ring">
+      <h2>Assess</h2>
+      <div class="gloss">Worth understanding. Not committed.</div>
+    </div>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td class="item">Cloudflare Workers</td>
+            <td class="since">—</td>
+            <td class="notes">Running a SQLite-backed service on it.</td>
+          </tr>
+          <tr>
+            <td class="item">restic + Backblaze</td>
+            <td class="since">—</td>
+            <td class="notes">Backup snapshots. Caveat: I have never tested a restore. Untested backups are not backups.</td>
+          </tr>
+          <tr>
+            <td class="item"><a href="https://hatchet.run/">Hatchet</a></td>
+            <td class="since">2026-07</td>
+            <td class="notes">Task orchestration. Idea on file: distributed video encoding across a fleet of MacBooks. Parked here deliberately rather than started.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="ring">
+      <h2>Hold</h2>
+      <div class="gloss">Not starting anything new with this.</div>
+    </div>
+    <p class="empty">Nothing here yet.</p>
+  </section>
+
+  <footer>
+    <span>Last updated 2026-07-30</span>
+    <span><a href="https://github.com/tikiverse/radar">github.com/tikiverse/radar</a></span>
+  </footer>
+
+</main>
+</body>
+</html>
