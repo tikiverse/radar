@@ -33,9 +33,9 @@ Published at [radar.tiki.pub](https://radar.tiki.pub).
 | Item | Ring | Since | Notes |
 |---|---|---|---|
 | Claude Code w/ Remote Control | Adopt | 2026-04 | Work on projects, across multiple hosts, on the go. |
-| Obsidian | Adopt | — | Second brain. Daily notes, weekly/monthly/quarterly reviews. As of Jul '26, I pay for Obsidian Sync as well after dealing with iCloud sync data corruption. |
-| Cloudflare Workers | Trial | — | Using for a few hobby projects. |
-| restic + Backblaze | Assess | — | Remote backup snapshots. |
+| Obsidian | Adopt | 2022 | Second brain, everything is "just a file". Using for all types of notes, lists, weekly/monthly/quarterly reviews. In Jul ’26, I upgraded to Obsidian Sync after dealing with iCloud sync data corruption. |
+| Cloudflare Workers | Trial | 2026-01 | Using for a few hobby projects. |
+| restic + Backblaze | Assess | 2026-02 | Remote backup snapshots. |
 | Healthchecks.io | Adopt | 2026-06 | For cron/job observability — wanting assurance that scheduled intents actually ran. |
 | [Hatchet](https://hatchet.run/) | Assess | 2026-07 | Task orchestration. Idea on file: distributed video encoding across a fleet of MacBooks. Parked here deliberately rather than started. |
 | Synology NAS | Assess | 2026-07 | Best in class consumer-friendly software+hardware. Was embroiled in a 2025 controversy over a proprietary drive lock-in attempt, which it largely back-tracked on. |
