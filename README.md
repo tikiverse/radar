@@ -19,7 +19,7 @@ Published at [radar.tiki.pub](https://radar.tiki.pub).
 | **Adopt** | Earned a core spot in my stack |
 | **Trial** | Using actively, no strong opinion yet |
 | **Assess** | Worth spending time to research |
-| **Hold** | No further incentive to take action here |
+| **Hold off** | No further incentive to take action here |
 
 ## Rules
 
@@ -43,7 +43,7 @@ Published at [radar.tiki.pub](https://radar.tiki.pub).
 | Tailscale | Adopt | 2026-01 | Private networking for all of your devices. |
 | Audiobookshelf | Trial | 2026-07 | A self-hosted audiobooks server for your local network. Syncs progress across all devices. Has an ecosystem of clients for Web, Mobile (iOS+Android), and CarPlay. |
 | Beszel | Trial | 2026-07 | Lightweight server monitoring. I have this running on my Raspberry Pi 400. Very easy to setup after [some light setup](https://github.com/henrygd/beszel/discussions/1433). |
-| [Factorio](https://factorio.com/) | Hold | 2026-07 | Wishlist game deferred even longer, because real life has become this game. Why play a simulation? Saving it for a different season. |
+| [Factorio](https://factorio.com/) | Hold off | 2026-07 | Wishlist game deferred even longer, because real life has become this game. Why play a simulation? Saving it for a different season. |
 
 ## Changelog
 
