@@ -96,7 +96,14 @@
 
   /* trailing prose sits 120px below the last ring */
   section > :last-child { margin-bottom: 0; }
-  section + p { margin-top: 120px; }
+  section + .about { margin-top: 120px; }
+
+  .about {
+    font-size: inherit;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin: 0 0 0.5rem;
+  }
 
   .ring {
     display: flex;
@@ -220,12 +227,17 @@
           <tr>
             <td class="item">Obsidian</td>
             <td class="since">—</td>
-            <td class="notes">Daily notes, weekly/monthly/quarterly reviews. Private by design.</td>
+            <td class="notes">Second brain. Daily notes, weekly/monthly/quarterly reviews. As of Jul '26, I pay for Obsidian Sync as well after dealing with iCloud sync data corruption.</td>
           </tr>
           <tr>
             <td class="item">Healthchecks.io</td>
             <td class="since">2026-06</td>
             <td class="notes">For cron/job observability — wanting assurance that scheduled intents actually ran.</td>
+          </tr>
+          <tr>
+            <td class="item">Tailscale</td>
+            <td class="since">2026-01</td>
+            <td class="notes">Private networking for all of your devices.</td>
           </tr>
         </tbody>
       </table>
@@ -243,7 +255,17 @@
           <tr>
             <td class="item">Cloudflare Workers</td>
             <td class="since">—</td>
-            <td class="notes">Running a SQLite-backed service on it.</td>
+            <td class="notes">Using for a few hobby projects.</td>
+          </tr>
+          <tr>
+            <td class="item">Audiobookshelf</td>
+            <td class="since">2026-07</td>
+            <td class="notes">A self-hosted audiobooks server for your local network. Syncs progress across all devices. Has an ecosystem of clients for Web, Mobile (iOS+Android), and CarPlay.</td>
+          </tr>
+          <tr>
+            <td class="item">Beszel</td>
+            <td class="since">2026-07</td>
+            <td class="notes">Lightweight server monitoring. I have this running on my Raspberry Pi 400. Very easy to setup after <a href="https://github.com/henrygd/beszel/discussions/1433">some light setup</a>.</td>
           </tr>
         </tbody>
       </table>
@@ -261,12 +283,22 @@
           <tr>
             <td class="item">restic + Backblaze</td>
             <td class="since">—</td>
-            <td class="notes">Backup snapshots. Caveat: I have never tested a restore. Untested backups are not backups.</td>
+            <td class="notes">Remote backup snapshots.</td>
           </tr>
           <tr>
             <td class="item"><a href="https://hatchet.run/">Hatchet</a></td>
             <td class="since">2026-07</td>
             <td class="notes">Task orchestration. Idea on file: distributed video encoding across a fleet of MacBooks. Parked here deliberately rather than started.</td>
+          </tr>
+          <tr>
+            <td class="item">Synology NAS</td>
+            <td class="since">2026-07</td>
+            <td class="notes">Best in class consumer-friendly software+hardware. Was embroiled in a 2025 controversy over a proprietary drive lock-in attempt, which it largely back-tracked on.</td>
+          </tr>
+          <tr>
+            <td class="item">Raspberry Pi 400</td>
+            <td class="since">2026-07</td>
+            <td class="notes">Fun little device to use as an always-on mini server. I have Claude Code running on it with full privileges, and a 256GB NVMe SSD attached via an external enclosure.</td>
           </tr>
         </tbody>
       </table>
@@ -280,6 +312,8 @@
     </div>
     <p class="empty">Nothing here yet.</p>
   </section>
+
+  <h2 class="about">About this page</h2>
 
   <p>It's never been easier for a single person to run their own software factory, thanks to agentic AI. With this newfound leverage and scale, it's important for individual software engineers to inherit the behaviors of larger software factories (and treat the software factory itself <a href="https://x.com/rauchg/status/2081123293340520642">like a product</a>).</p>
 
