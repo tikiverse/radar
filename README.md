@@ -33,12 +33,17 @@ Published at [radar.tiki.pub](https://radar.tiki.pub).
 | Item | Ring | Since | Notes |
 |---|---|---|---|
 | Claude Code | Adopt | 2026-04 | Primary interface for coding and for the agentOS vault. |
-| Obsidian | Adopt | — | Daily notes, weekly/monthly/quarterly reviews. Private by design. |
-| Cloudflare Workers | Trial | — | Running a SQLite-backed service on it. |
-| restic + Backblaze | Assess | — | Backup snapshots. Caveat: I have never tested a restore. Untested backups are not backups. |
+| Obsidian | Adopt | — | Second brain. Daily notes, weekly/monthly/quarterly reviews. As of Jul '26, I pay for Obsidian Sync as well after dealing with iCloud sync data corruption. |
+| Cloudflare Workers | Trial | — | Using for a few hobby projects. |
+| restic + Backblaze | Assess | — | Remote backup snapshots. |
 | Healthchecks.io | Adopt | 2026-06 | For cron/job observability — wanting assurance that scheduled intents actually ran. |
 | [Hatchet](https://hatchet.run/) | Assess | 2026-07 | Task orchestration. Idea on file: distributed video encoding across a fleet of MacBooks. Parked here deliberately rather than started. |
+| Synology NAS | Assess | 2026-07 | Task orchestration. Idea on file: distributed video encoding across a fleet of MacBooks. Parked here deliberately rather than started. |
+| Raspberry Pi 400 | Assess | 2026-07 | Fun little device to use as an always-on mini server. I have Claude Code running on it with full privileges, and a 256GB NVMe SSD attached via attached enclosure |
+| Tailscale | Adopt | 2026-01 | Private networking for all of your devices. |
+| Audiobookshelf | Trial | 2026-07 | A self-hosted audiobooks server for your local network. Syncs progress across all devices. Has an ecosystem of clients for Web, Mobile (iOS+Android), CarPlay). |
+| Bezsel | Trial | 2026-07 | Lightweight server monitoring. I have this running on my Raspberry Pi 400. Very easy to setup after [some light setup](https://github.com/henrygd/beszel/discussions/1433). |
 
 ## Changelog
 
-- **2026-07-30** — Radar created. Seeded with six entries.
+- **2026-07-30** — Radar created. Seeded with a few entries.
