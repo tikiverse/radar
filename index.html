@@ -56,7 +56,7 @@
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: -0.01em;
-    margin: 0 0 2.25rem;
+    margin: 0 0 1.75rem;
   }
 
   p { margin: 0 0 1.25rem; }
@@ -79,12 +79,6 @@
     margin: 3rem 0;
   }
 
-  .note {
-    color: var(--muted);
-    font-size: 0.9375rem;
-    line-height: 1.6;
-  }
-
   /* ---------- rules list ---------- */
 
   h2 {
@@ -94,18 +88,10 @@
     margin: 0 0 1rem;
   }
 
-  ol {
-    margin: 0;
-    padding-left: 1.25rem;
-    color: var(--muted);
-    font-size: 0.9375rem;
-  }
-  ol li { margin-bottom: 0.5rem; padding-left: 0.25rem; }
-  ol li::marker { color: var(--faint); }
-
   /* ---------- rings ---------- */
 
   section { margin-top: 3.25rem; }
+  section.first { margin-top: 2.75rem; }
 
   .ring {
     display: flex;
@@ -113,7 +99,7 @@
     justify-content: space-between;
     gap: 1rem;
     padding-bottom: 0.625rem;
-    border-bottom: 1px solid var(--rule-hi);
+    border-bottom: 1px solid var(--fg);
     margin-bottom: 0.25rem;
   }
 
@@ -174,7 +160,7 @@
   /* ---------- footer ---------- */
 
   footer {
-    margin-top: 4.5rem;
+    margin-top: 3.25rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--rule);
     color: var(--faint);
@@ -202,23 +188,7 @@
 
   <p>A personal tech radar. Inspired heavily by the <a href="https://www.thoughtworks.com/radar">Thoughtworks Technology Radar</a> — if you haven't checked that out, please do.</p>
 
-  <p>It's never been easier for a single person to run their own software factory, thanks to agentic AI. With this newfound leverage and scale, it's important for individual software engineers to inherit the behaviors of larger software factories (and treat the software factory itself <a href="https://x.com/rauchg/status/2081123293340520642">like a product</a>). Thoughtworks is one of the best at this game and I've been following them for more than 10 years. I love what they do with their Technology Radar, and now that I'm assessing and trialing many different software solutions across my many projects, I feel the need to recreate this format for myself.</p>
-
-  <p>I highly encourage you consider it too.</p>
-
-  <hr>
-
-  <p class="note">This is a <strong>log, not a recommendation</strong>. It records what I'm actually using, trying, and avoiding, with dates. It is not an argument that any of these choices are correct, and it isn't advice. If an entry is here, it means I touched the thing — nothing more.</p>
-
-  <h2 style="margin-top:2.5rem">Rules</h2>
-  <ol>
-    <li>Nothing goes on the radar that I haven't personally touched.</li>
-    <li>Every entry is dated. Entries move between rings; the dates stay.</li>
-    <li>Assess is cheap on purpose — it's where a shiny new idea goes instead of becoming a weekend project.</li>
-    <li>v0 is a markdown table. It stays a markdown table until the table is genuinely the bottleneck.</li>
-  </ol>
-
-  <section>
+  <section class="first">
     <div class="ring">
       <h2>Adopt</h2>
       <div class="gloss">In real use. I'd reach for this by default.</div>
@@ -289,6 +259,14 @@
     </div>
     <p class="empty">Nothing here yet.</p>
   </section>
+
+  <hr>
+
+  <p>It's never been easier for a single person to run their own software factory, thanks to agentic AI. With this newfound leverage and scale, it's important for individual software engineers to inherit the behaviors of larger software factories (and treat the software factory itself <a href="https://x.com/rauchg/status/2081123293340520642">like a product</a>).</p>
+
+  <p>Thoughtworks is one of the best at this game and I've been following them for more than 10 years. I love what they do with their Technology Radar, and felt the need to recreate this format for myself to share with others.</p>
+
+  <p>I highly encourage you to consider it too.</p>
 
   <footer>
     <span>Last updated 2026-07-30</span>

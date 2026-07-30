@@ -2,13 +2,13 @@
 
 A personal tech radar. Inspired heavily by the [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar) - if you haven't checked that out, please do.
 
-It's never been easier for a single person to run their own software factory, thanks to agentic AI. With this newfound leverage and scale, it's important for individual software engineers to inherit the behaviors of larger software factories (and treat the software factory itself [like a product](https://x.com/rauchg/status/2081123293340520642)). Thoughtworks is one of the best at this game and I've been following them for more than 10 years. I love what they do with their Technology Radar, and now that I'm assessing and trialing many different software solutions across my many project, I feel the need to recreate this format for myself.
+It's never been easier for a single person to run their own software factory, thanks to agentic AI. With this newfound leverage and scale, it's important for individual software engineers to inherit the behaviors of larger software factories (and treat the software factory itself [like a product](https://x.com/rauchg/status/2081123293340520642)).
 
-I highly encourage you consider it too.
+Thoughtworks is one of the best at this game and I've been following them for more than 10 years. I love what they do with their Technology Radar, and felt the need to recreate this format for myself to share with others.
+
+I highly encourage you to consider it too.
 
 ---
-
-This is a **log, not a recommendation**. It records what I'm actually using, trying, and avoiding, with dates. It is not an argument that any of these choices are correct, and it isn't advice. If an entry is here, it means I touched the thing — nothing more.
 
 Published at [radar.tiki.pub](https://radar.tiki.pub).
 
