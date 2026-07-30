@@ -38,7 +38,7 @@ Published at [radar.tiki.pub](https://radar.tiki.pub).
 | restic + Backblaze | Assess | 2026-02 | Remote backup snapshots. |
 | Healthchecks.io | Adopt | 2026-06 | For cron/job observability — wanting assurance that scheduled intents actually ran. |
 | [Hatchet](https://hatchet.run/) | Assess | 2026-07 | Task orchestration. Idea on file: distributed video encoding across a fleet of MacBooks. Parked here deliberately rather than started. |
-| Synology NAS | Assess | 2026-07 | Best in class consumer-friendly software+hardware. Was embroiled in a 2025 controversy over a proprietary drive lock-in attempt, which it largely back-tracked on. |
+| Synology NAS | Assess | 2026-07 | Best in class consumer-friendly software+hardware for on-premise data storage. Was embroiled in a 2025 controversy over a proprietary drive lock-in attempt, which it largely back-tracked on. |
 | Raspberry Pi 400 | Assess | 2026-07 | Fun little device to use as an always-on mini server. I have Claude Code running on it with full privileges, and a 256GB NVMe SSD attached via an external enclosure. |
 | Tailscale | Adopt | 2026-01 | Private networking for all of your devices. |
 | Audiobookshelf | Trial | 2026-07 | A self-hosted audiobooks server for your local network. Syncs progress across all devices. Has an ecosystem of clients for Web, Mobile (iOS+Android), and CarPlay. |
