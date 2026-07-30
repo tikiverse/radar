@@ -34,7 +34,7 @@ Published at [radar.tiki.pub](https://radar.tiki.pub).
 |---|---|---|---|
 | Claude Code | Adopt | 2026-04 | Primary interface for coding and for the agentOS vault. |
 | Obsidian | Adopt | — | Daily notes, weekly/monthly/quarterly reviews. Private by design. |
-| Cloudflare Workers | Assess | — | Running a SQLite-backed service on it. |
+| Cloudflare Workers | Trial | — | Running a SQLite-backed service on it. |
 | restic + Backblaze | Assess | — | Backup snapshots. Caveat: I have never tested a restore. Untested backups are not backups. |
 | Healthchecks.io | Adopt | 2026-06 | For cron/job observability — wanting assurance that scheduled intents actually ran. |
 | [Hatchet](https://hatchet.run/) | Assess | 2026-07 | Task orchestration. Idea on file: distributed video encoding across a fleet of MacBooks. Parked here deliberately rather than started. |
