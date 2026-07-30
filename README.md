@@ -16,10 +16,10 @@ Published at [radar.tiki.pub](https://radar.tiki.pub).
 
 | Ring | Meaning |
 |---|---|
-| **Adopt** | In real use. I'd reach for this by default. |
-| **Trial** | Actively using it on something real, not yet settled. |
-| **Assess** | Worth understanding. Read about it, maybe poked at it. Not committed. |
-| **Hold** | Not starting anything new with this. Includes things I liked and moved on from. |
+| **Adopt** | Earned a core spot in my stack |
+| **Trial** | Using actively, no strong opinion yet |
+| **Assess** | Worth spending time to research |
+| **Hold** | No further incentive to take action here |
 
 ## Rules
 
