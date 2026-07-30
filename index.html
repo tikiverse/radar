@@ -73,12 +73,6 @@
 
   strong { font-weight: 600; }
 
-  hr {
-    border: 0;
-    border-top: 1px solid var(--rule);
-    margin: 3rem 0;
-  }
-
   /* ---------- rules list ---------- */
 
   h2 {
@@ -93,6 +87,10 @@
   section { margin-top: 3.25rem; }
   section.first { margin-top: 2.75rem; }
 
+  /* trailing prose sits 120px below the last ring */
+  section > :last-child { margin-bottom: 0; }
+  section + p { margin-top: 120px; }
+
   .ring {
     display: flex;
     align-items: baseline;
@@ -103,7 +101,18 @@
     margin-bottom: 0.25rem;
   }
 
-  .ring h2 { margin: 0; }
+  .ring h2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .ico {
+    width: 1em;
+    height: 1em;
+    flex: none;
+  }
 
   .ring .gloss {
     color: var(--faint);
@@ -190,7 +199,7 @@
 
   <section class="first">
     <div class="ring">
-      <h2>Adopt</h2>
+      <h2><svg class="ico" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M200,48v63.1c0,39.7-31.75,72.6-71.45,72.9A72,72,0,0,1,56,112V48Z" opacity="0.2"/><path d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"/></svg>Adopt</h2>
       <div class="gloss">In real use. I'd reach for this by default.</div>
     </div>
     <div class="scroll">
@@ -218,7 +227,7 @@
 
   <section>
     <div class="ring">
-      <h2>Trial</h2>
+      <h2><svg class="ico" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M180.92,88,128,128,74.67,88Z" opacity="0.2"/><path d="M200,75.64V40a16,16,0,0,0-16-16H72A16,16,0,0,0,56,40V76a16.07,16.07,0,0,0,6.4,12.8L114.67,128,62.4,167.2A16.07,16.07,0,0,0,56,180v36a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V180.36a16.09,16.09,0,0,0-6.35-12.77L141.27,128l52.38-39.59A16.09,16.09,0,0,0,200,75.64ZM72,40H184V75.64L178.23,80H77.33L72,76Zm56,78L98.67,96h58.4Zm56,98H72V180l48-36v24a8,8,0,0,0,16,0V144.08l48,36.28Z"/></svg>Trial</h2>
       <div class="gloss">Actively using it on something real, not yet settled.</div>
     </div>
     <p class="empty">Nothing here yet.</p>
@@ -226,7 +235,7 @@
 
   <section>
     <div class="ring">
-      <h2>Assess</h2>
+      <h2><svg class="ico" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M104,168a40,40,0,1,1-40-40A40,40,0,0,1,104,168Zm88-40a40,40,0,1,0,40,40A40,40,0,0,0,192,128Z" opacity="0.2"/><path d="M237.2,151.87v0a47.1,47.1,0,0,0-2.35-5.45L193.26,51.8a7.82,7.82,0,0,0-1.66-2.44,32,32,0,0,0-45.26,0A8,8,0,0,0,144,55V80H112V55a8,8,0,0,0-2.34-5.66,32,32,0,0,0-45.26,0,7.82,7.82,0,0,0-1.66,2.44L21.15,146.4a47.1,47.1,0,0,0-2.35,5.45v0A48,48,0,1,0,112,168V96h32v72a48,48,0,1,0,93.2-16.13ZM76.71,59.75a16,16,0,0,1,19.29-1v73.51a47.9,47.9,0,0,0-46.79-9.92ZM64,200a32,32,0,1,1,32-32A32,32,0,0,1,64,200ZM160,58.74a16,16,0,0,1,19.29,1l27.5,62.58A47.9,47.9,0,0,0,160,132.25ZM192,200a32,32,0,1,1,32-32A32,32,0,0,1,192,200Z"/></svg>Assess</h2>
       <div class="gloss">Worth understanding. Not committed.</div>
     </div>
     <div class="scroll">
@@ -254,13 +263,11 @@
 
   <section>
     <div class="ring">
-      <h2>Hold</h2>
+      <h2><svg class="ico" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" opacity="0.2"/><path d="M165.66,101.66,139.31,128l26.35,26.34a8,8,0,0,1-11.32,11.32L128,139.31l-26.34,26.35a8,8,0,0,1-11.32-11.32L116.69,128,90.34,101.66a8,8,0,0,1,11.32-11.32L128,116.69l26.34-26.35a8,8,0,0,1,11.32,11.32ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg>Hold</h2>
       <div class="gloss">Not starting anything new with this.</div>
     </div>
     <p class="empty">Nothing here yet.</p>
   </section>
-
-  <hr>
 
   <p>It's never been easier for a single person to run their own software factory, thanks to agentic AI. With this newfound leverage and scale, it's important for individual software engineers to inherit the behaviors of larger software factories (and treat the software factory itself <a href="https://x.com/rauchg/status/2081123293340520642">like a product</a>).</p>
 
